@@ -53,14 +53,14 @@ services:
 
   # The nginx reverse proxy.
   # used for reverse proxying the API service and Web service.
-  nginx:
-    image: nginx:latest
-    volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
-      - ./nginx/proxy.conf:/etc/nginx/proxy.conf
-      - ./nginx/conf.d:/etc/nginx/conf.d
-    ports:
-      - "80:80"
+  # nginx:
+  #   image: nginx:latest
+  #   volumes:
+  #     - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+  #     - ./nginx/proxy.conf:/etc/nginx/proxy.conf
+  #     - ./nginx/conf.d:/etc/nginx/conf.d
+  #   ports:
+  #     - "80:80"
 
   # Qdrant vector store.
   # uncomment to use qdrant as vector store.
