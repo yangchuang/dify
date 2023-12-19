@@ -4,7 +4,6 @@ import { useSearchParams } from 'next/navigation'
 
 import cn from 'classnames'
 import NormalForm from './normalForm'
-import OneMoreStep from './oneMoreStep'
 
 const Forms = () => {
   const searchParams = useSearchParams()
@@ -13,7 +12,7 @@ const Forms = () => {
   const getForm = () => {
     switch (step) {
       case 'next':
-        return <OneMoreStep />
+        return <NormalForm />
       default:
         return <NormalForm />
     }
