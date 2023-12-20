@@ -108,11 +108,6 @@ const ActivateForm = () => {
             <div className="mb-3 flex justify-center items-center w-20 h-20 p-5 rounded-[20px] border border-gray-100 shadow-lg text-[40px] font-bold">🤷‍♂️</div>
             <h2 className="text-[32px] font-bold text-gray-900">{t('login.invalid')}</h2>
           </div>
-          <div className="w-full mx-auto mt-6">
-            <Button type='primary' className='w-full !fone-medium !text-sm'>
-              <a href="https://dify.ai">{t('login.explore')}</a>
-            </Button>
-          </div>
         </div>
       )}
       {checkRes && checkRes.is_valid && !showSuccess && (
